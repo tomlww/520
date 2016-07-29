@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/font.css" />
+	<style>
+		.header-div{
+	    	width: 100%;
+	    	height: 4.5rem;
+	    	background: white;
+    	}
+    	/*订单标题begin*/
+    	.pay-title{
+    		 width: 48rem;
+		    height: 5rem;
+		   /*  border: 1px solid red; */
+		    margin: 1rem auto;
+		    text-align: center;
+		    font-size: .4rem;
+		    color: #8C8C8C;
+    	}
+    	.order-img{
+    		height: 3rem;
+   			
+    	}
+    	.order-img img{
+    		 width: 2.3rem;
+    		 height: 2rem;
+    	}
+    	.order-img span:nth-child(2){
+    		font-size: 1.4rem;
+		    font-weight: 600;
+		    color: black;
+    	}
+		/*订单标题end*/
+
+		.order-tail{
+			
+		    height: 2rem;
+		    line-height: 2rem;
+		   /*  border: 1px solid red; */
+		    font-weight: 600;
+		}
+		.tab-tatile{}
+		.td-hj{
+			text-align: right;
+		}
+		.td-img{
+			border: 1px solid #ccc;
+			width: 2rem;
+    		text-align: center;
+		}
+		.td-img img{
+			width: 4rem;
+		}
+		.tab-tatile tr{
+			    border: 1px solid #ccc;
+		}
+		.pay-tatile{
+			width: 9rem;
+		    height: 3rem;
+		    border: 1px solid #ccc;
+		    text-align: center;
+		    line-height: 3rem;
+		    font-weight: 600;
+		}
+		.pay-ul{
+			 width: 44rem;
+   			 height: 3rem;
+    		border: 1px solid #ccc;
+		}
+		.pay-ul li{
+			width: 11rem;
+		}
+		.pay-ul li img{
+			width: 2rem;
+		}
+		.pay-ul li input{
+			margin: .4rem;
+		}
+		.com-div{
+			
+		    margin: 1rem;
+		    width: 50.4rem;
+		    margin: 0 auto;
+		    text-align: right;
+		}
+		.com-div input{
+			width: 8rem;
+		    line-height: 2.2rem;
+		    background: #FF950B;
+		    border-radius: 5px;
+		    color: white;
+		    margin: 1.2rem 0rem 4rem 0rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="header-div">
+			<iframe src="header.html" width="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div class="body-info">
+			<div class="pay-title">
+				<div class="flex-center order-img">
+					<span><img src="image/qzf.png" alt=""></span>
+					<span>
+					订单确认
+					</span>
+				</div>
+				
+				<p>(提交订单请仔细核对购买信息)</p>
+			</div>
+			<div class="body-div order-tail">
+				订单详情
+			</div>
+			<table class="body-div tab-tatile">
+				<tr >
+					<td  rowspan="6" colspan="2" class="td-img"><img src="image/dcart.png" alt=""> </td>
+					
+				</tr>
+				<tr >
+					<td colspan="" rowspan="" headers=""></td>
+					<td >项目</td>
+					<td>单价(元)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>社保公积金</td>
+					<td>￥3000</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>社保公积金</td>
+					<td>￥3000</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>社保公积金</td>
+					<td>￥3000</td>
+				</tr>
+				<tr>
+					
+					<td colspan="3" class="td-hj">
+						<span>合 计</span>&nbsp;&nbsp;
+						<<span>￥900.00元</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+
+			</table>
+			<div class="body-div order-tail">
+				选择支付方式
+			</div>
+			<div class="body-div flex-center">
+				<div class="pay-tatile">
+					支付平台
+				</div>
+				<ul  class="flex-center pay-ul">
+					<li class="flex-center">
+						<input type="radio" name="radio"> <img src="image/xxzf.png" alt="">
+					</li>
+					<li class="flex-center">
+						<input type="radio" name="radio"> <img src="image/xxzf.png" alt="">&nbsp;微信支付
+					</li>
+					<li class="flex-center">
+						<input type="radio" name="radio"> <img src="image/xxzf.png" alt="">&nbsp;线下支付
+					</li>
+				</ul>
+			</div>
+			<div class="com-div">
+				<input type="button" value="提交订单">
+			</div>
+			<iframe src="footer.html" width="100%" frameborder="0" scrolling="no">
+	</div>
+</body>
+</html>

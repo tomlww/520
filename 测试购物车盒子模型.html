@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title></title>
+	<link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<!–[if lt IE 9]>
+	<script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
+	<![endif]–>
+	<style>
+		ul {
+		  padding: 0;
+    	  margin-left: 6px;
+		  list-style: none;
+		  font-size: 0;
+		}
+		li {
+		  font-size: .5rem;
+		      width: 45%;
+		    overflow: initial;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    /* border: 1px solid red; */
+   			 height: 1rem;
+    		line-height: 1rem;
+		}
+		/*box-flex主要让子容器针对父容器的宽度按一定规则进行划分 -->*/ 
+		.wrap{
+		    display:-moz-box;
+		    display:-webkit-box;
+		    display:box;
+		}
+		.wth-hg{
+			width:auto;
+		    height:2rem;
+		    line-height: 2rem;
+		}
+		
+		.wt20{
+			 background:purple;
+			width:20%;
+		}
+		.wt80{
+			background:orange;
+			width:80%;
+		}
+
+
+		.line-lable{
+		    width: 1rem;
+		    height: 1rem;
+		    background: white;
+		    /* display: block; */
+		    display: -moz-box;
+		    display: -webkit-box;
+		    border: 1px solid #ccc;
+		    display: box;
+		    margin: 0 auto;
+		    border-radius: 50%;
+		}
+		
+		.box-center{
+		   
+	        display: -moz-box;
+		    display: -webkit-box;
+		    display: box;
+		    -webkit-box-align: center;
+			}
+
+		.wt4{
+			width:4rem;
+		}
+		.textInput{
+			width: 2rem;
+    		text-align: center;
+		}
+		.input{
+			width: 1rem;
+		}
+		.fts16{
+			font-size: 16px;
+		}
+		.box{
+			display:-moz-box;
+		    display:-webkit-box;
+		    display:box;
+		}
+		.box-vertical{
+			-moz-box-orient:vertical;
+			-webkit-box-orient:vertical;
+			box-orient:vertical;
+		}
+		</style>
+</head>
+<body>
+		<article class="wrap wth-hg">
+		    <section class="wt20 box-center">
+		    	<lable class="line-lable"></lable>
+		    </section>
+		    <section class="wrap wt80">
+			    <section class="wt80">
+			    	<img src="image/check_on.png" alt="">折剑山庄
+			    </section>	
+			    <section class="wt20">
+			    	<input type="button" name="button" value="领券" placeholder="">
+			    </section>
+		    </section>
+		    
+		</article>
+
+
+		<article class="wrap wth-hg">
+		    <section class="wt20 box-center">
+		    	<lable class="line-lable"></lable>
+		    </section>
+		    <section class="wrap wt80 box-vertical">
+			   <div class="box">
+	 			<img src="image/z1.jpg" alt="" class="wt4">
+		 			<div>
+		 				<ul>
+		 					<li>这是个不同的标题非常的长,而且是我手写的做一个公共的购物车,你将看到一个不同的世界</li>
+		 					<li>颜色:黑色玫瑰 尺寸:32</li>
+		 					<li>价格:￥123</li>
+		 				</ul>
+		 			</div>
+		 		</div>
+		 		<div class="box">
+		 			<div class="box4 fts16 wt80">
+		 				<input type="button" class="input" value="-"><input type="text" class="textInput" value="1"><input type="button" class="input"  value="+">
+		 			</div>
+		 			<div class="sectionTwo fts16">
+		 				<input type="button" name="" value="延保服务">
+		 			</div>
+	 			</div>
+		    </section>
+		    
+		</article>
+		
+		<!-- <article class="wrap wth-hg">
+		    <section class="box-flex1 box-center">
+		    	<lable class="line-lable"></lable>
+		    </section>
+		    <section class="box-flex5">
+		   				 	<div class="box">
+		 				 			<img src="image/z1.jpg" alt="" class="wt4">
+		 				 			<div>
+		 				 				<ul>
+		 				 					<li>这是个不同的标题非常的长,而且是我手写的做一个公共的购物车,你将看到一个不同的世界</li>
+		 				 					<li>颜色:黑色玫瑰 尺寸:32</li>
+		 				 					<li>价格:￥123</li>
+		 				 				</ul>
+		 				 			</div>
+		 				 		</div>
+		 				 		<div class="box">
+		 				 			<div class="box4 fts16">
+		 				 				<input type="button" class="input" value="-"><input type="text" class="textInput" value="1"><input type="button" class="input"  value="+">
+		 				 			</div>
+		 				 			<div class="sectionTwo fts16">
+		 				 				<input type="button" name="" value="延保服务">
+		 				 			</div>
+		 			 		</div>
+		    </section>
+		    <section class="box-flex2"><input type="button" name="button" value="领券" placeholder=""></section>
+		</article> -->
+
+			<!-- <article class="wrap">
+		 	<section class="box-flex1 box-center">
+		 		<lable class="line-lable"></lable>
+		 	</section>
+		 	<section class="box-flex7">
+		 	  <div class="box">
+		 				 			<img src="image/z1.jpg" alt="" class="wt4">
+		 				 			<div>
+		 				 				<ul>
+		 				 					<li>这是个不同的标题非常的长,而且是我手写的做一个公共的购物车,你将看到一个不同的世界</li>
+		 				 					<li>颜色:黑色玫瑰 尺寸:32</li>
+		 				 					<li>价格:￥123</li>
+		 				 				</ul>
+		 				 			</div>
+		 				 		</div>
+		 				 		<div class="box">
+		 				 			<div class="box4 fts16">
+		 				 				<input type="button" class="input" value="-"><input type="text" class="textInput" value="1"><input type="button" class="input"  value="+">
+		 				 			</div>
+		 				 			<div class="sectionTwo fts16">
+		 				 				<input type="button" name="" value="延保服务">
+		 				 			</div>
+		 			 		</div>
+	 	</section> 
+	 	
+	 </article>
+ -->
+
+
+
+
+
+</body>
+</html>

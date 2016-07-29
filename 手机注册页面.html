@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>农城微商,而且模型进行中</title>
+	<link rel="stylesheet" href="css/myCommon.css" />
+	<style>
+		.button {
+		    border: 1px solid #0894ec;
+		    color: #0894ec;
+		    text-decoration: none;
+		    text-align: center;
+		    display: block;
+		    border-radius: 0.25rem;
+		    line-height: 1.25rem;
+		    box-sizing: border-box;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    -ms-appearance: none;
+		    appearance: none;
+		    background: none;
+		    padding: 0 0.5rem;
+		    margin: 0;
+		    height: 1.35rem;
+		    white-space: nowrap;
+		    position: relative;
+		    text-overflow: ellipsis;
+		    font-size: 0.7rem;
+		    font-family: inherit;
+		    cursor: pointer;
+		}
+		.bar .button-nav.pull-left {
+		    margin-left: -0.25rem;
+		}
+		.bar .button.pull-left {
+		    margin-right: 0.5rem;
+		}
+		.bar .button-link {
+		    top: 0;
+		    padding: 0;
+		    font-size: 0.8rem;
+		    line-height: 2.2rem;
+		    height: 2.2rem;
+		    color: #0894ec;
+		    border: 0;
+		}
+		.bar .button {
+		    position: relative;
+		   /*  top: 0.35rem; */
+		    z-index: 20;
+		    margin-top: 0;
+		    font-weight: 400;
+		}
+		
+		.bar-tab {
+		    bottom: 0;
+		    width: 100%;
+		    height: 2.5rem;
+		    padding: 0;
+		    table-layout: fixed;
+		}
+
+		.bar-tab:before {
+		    content: '';
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    bottom: auto;
+		    right: auto;
+		    height: 1px;
+		    width: 100%;
+		    background-color: #e7e7e7;
+		    display: block;
+		    z-index: 15;
+		    -webkit-transform-origin: 50% 0%;
+		    transform-origin: 50% 0%;
+		}
+
+		.theme-dark .tab-item.active {
+		    color: #0894ec;
+		}
+
+		.bar-tab .tab-item {
+		    position: relative;
+		    display: table-cell;
+		    width: 1%;
+		    height: 2.5rem;
+		    color: #929292;
+		    text-align: center;
+		    vertical-align: middle;
+		}
+
+		.content {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    overflow: auto;
+		    -webkit-overflow-scrolling: touch;
+		}
+
+		
+		.h2d5{
+			height:2.5rem;
+		}
+	
+		.mg-tb{
+			margin:1rem 0;
+		}
+
+		
+		
+		
+	</style>
+</head>
+<body>
+	<header class="bar bar-nav">
+	    <button class="button button-link button-nav pull-left">
+	      <span class="icon icon-left"></span>
+	      返回
+	    </button>
+	    
+    	<h1 class="title">手机快速注册</h1>
+  </header>
+  
+  <div class="content content-div flex flex-column pd-tp1">
+  	<input type="text" name="phon" class="h2d5 ft-size1 pd-lf1 bd-rd5px brd0"  placeholder="请输入手机号">
+	<a href="#" class="mg-tb ft-size8">同意协议</a>  	
+	<input type="button" name="button" class="mg-tb bd-rd5px brd0 h2 c9" value="下一步">
+	<label class="ft-size8">遇到问题？您可以<a href="#">联系客服</a>
+  </div>
+
+</body>
+</html>

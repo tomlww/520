@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+	<style type="text/css" media="screen">
+	body{background-color: transparent;}
+	.wt1200{display:flex;     
+		justify-content: space-between;    
+		background-color: white;
+		margin:0px auto; width:51.4rem; 
+		text-align:center; height:4rem; 
+		/* border:1px solid red; */
+		 }
+	.logo-div{ margin: .3rem;}
+	/* ul li begin */
+	.flex-container {
+	     list-style: none;
+
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    height: 4rem;
+	    line-height: 5rem;
+	   /*  border: 1px solid red; */
+	    
+	}
+	.flex-container a {
+		display: -webkit-inline-box;
+		color:#585858;
+		height: 3.1rem;
+		padding: 0 .2rem 0 .2rem;
+	}
+	.flex-container a:hover {
+		border-bottom: 2px solid #585858;
+	}
+	
+	.w38{
+		width: 28rem;
+	}
+	.w15{
+		width:15rem;
+	}
+	.wth2{
+		width:2rem;
+	}
+	.wth10{
+		   width: 10rem;
+	}
+
+	.flex-item {
+	   padding: 5px;
+	   font-size: 14px;
+       width: 3.5rem;
+	}
+	
+	/* ul li end */
+	/* cart begin */
+	.cart-img{
+	    width: 28%;
+	    max-width: 62%;
+	    height: auto;
+	}
+	.wth7{
+		text-align:right;
+		width:3.4rem;
+	}
+	.login-li{
+		    /* border: 1px solid red; */
+	    font-size: 14px;
+	   
+	    line-height: 4.5rem;
+	}
+	.flex-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 4rem;
+    line-height: 5rem;
+    /* border: 1px solid red; */
+}
+	.flex-container a {
+    display: -webkit-inline-box;
+    color: #585858;
+    height: 3.1rem;
+    padding: 0 .2rem 0 .2rem;
+	}
+
+	/* cart end */
+	</style>
+</head>
+<body>
+	<div class="wt1200">
+		<div class="logo-div">
+			<img src="image/blankLogo.png"  alt="">
+		</div>
+		<div>
+			<ul class="flex-container w38">
+				<li class="flex-item"><a href="index.html">首页</a></li>
+				<li class="flex-item"><a href="#">企业注册</a></li>
+				<li class="flex-item"><a href="#">代理记账</a></li>
+				<li class="flex-item"><a href="#">商标</a></li>
+				<li class="flex-item"><a href="#">社保</a></li>
+				<li class="flex-item"><a href="#">法务</a></li>
+				<li class="flex-item"><a href="#">银行</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul class="flex-container w15">
+				<!-- <li class="flex-item wth10">
+					<a href="#" style="border-bottom: 2px solid #626262;">欢迎：15800944023 </a> 
+					<a  href="${ctxPath}/user/logOut">[退出]</a>
+				</li> -->
+				<li  class="flex-center wth10 login-li">
+					<a href="#"  onclick="a()">登录</a>&nbsp;&nbsp; <a href="#" onclick="a()">注册</a>
+				</li>
+				<!-- <li class="flex-item wth2" style=" width: 2rem;"><a href="#"  onclick="a()">登录</a></li>
+				<li class="flex-item wth2" style=" width: 2rem;"><a href="#" onclick="a()">注册</a></li> -->
+				<li class="flex-item wth7" >
+				<a>
+				购物车<img src="image/cart.png" alt="购物车" class="cart-img" style="width: 1rem;">
+				</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<script>
+
+	function a(){
+		 parent.location.href="login.html";
+		
+	}
+	</script>
+</body>
+</html>

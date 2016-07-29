@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/font.css" />
+	<style type="text/css" media="screen">
+		.p-cart{
+		
+	}
+	.p-cart-ul{
+		background: #ccc;
+	}
+	.p-cart-ul li{
+		width: 11rem;
+	    height: 2rem;
+	    line-height: 2rem;
+	    /* border: 1px solid red; */
+	    text-align: center;
+	}
+	.p-cart-ul li span{
+		width: 2px;
+	    height: 1.6rem;
+	    background: #626262;
+	    display: -webkit-inline-box;
+	    float: right;
+	    line-height: -0.2rem;
+	    margin: 4px;
+	}
+	.p-cart-info-ul{
+		border-bottom: 1px solid #ccc;
+	}
+	.p-cart-info-ul li{
+		width: 10rem;
+    height: 3rem;
+   /*  border: 1px solid red; */
+	}
+	.p-cart-info-ul li .img{
+		    width: 1rem;
+	}
+	.p-cart-info-ul li .input{
+		 height: 1.1rem;
+    	width: 1rem;
+	}
+	.p-cart-info-ul li .textInput{
+		 width: 2rem;
+	    text-align: center;
+	    margin: 3px;
+	}
+	.p-cart-js{
+		width: 100%;
+	    height: 3rem;
+	    /* border: 1px solid red; */
+	    line-height: 3rem;
+	}
+	.p-cart-js div:nth-child(1){
+		float:left;
+	}
+	.p-cart-js div:nth-child(2){
+		float:right;
+	}
+	 .p-but1{
+		width: 6rem;
+	    height: 1.5rem;
+	    border-radius: 5px;
+	    background: #FFA32C;
+	    color: white;
+	}
+	/*cart end*/
+	</style>
+</head>
+<body>
+	<div class="p-cart body-div" id="cart">
+		<div >
+			<ul class="flex-center p-cart-ul">
+				<li>项目 <span></span></li>
+				<li>单价 <span></span></li>
+				<li>数量 <span></span></li>
+				<li>合计 <span></span></li>
+				<li>操作 </li>
+			</ul>
+		</div>
+
+		<ul class="flex-center p-cart-info-ul">
+			<li class="flex-center">
+				<span>
+					<img src="image/hdh.png" alt="">
+				</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span >
+					<img src="image/zl.png" alt="">
+				</span>&nbsp;&nbsp;
+				<span class="span">
+					社保公积金
+				</span>
+				
+			</li>	
+			<li class="flex-center">
+				<span>
+					单价：￥3000
+				</span>
+			</li>	
+			<li class="flex-center">
+				<span>
+					<input type="button" class="input" value="-"><input type="text" class="textInput" value="1"><input type="button" class="input"  value="+">
+				</span>
+			</li>
+			<li class="flex-center">
+				<span>
+					￥3000元
+				</span>
+			</li>
+			<li class="flex-center">
+				<img src="image/ljt.png" class="img" alt="">
+			</li>
+		</ul>
+		<div class="p-cart-js">
+			<div class="flex-center">&nbsp;&nbsp;&nbsp;&nbsp;
+				<span><input type="checkbox"></span>
+				<span>全选</span>
+			</div>
+			<div >
+			<span>合计：60000</span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" class="p-but1" name="" value="付款">
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+		</div>
+		</div>
+	</div>
+</body>
+</html>

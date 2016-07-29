@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>LIGHTBOX EXAMPLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <style type="text/css">
+          .black_overlay{
+             display: none; 
+             -webkit-box-position:fixed;
+             -webkit-box-position: fixed;
+            -ms-flex-position: absolute;
+            -webkit-justify-position: fixed;
+             position: fixed;
+             top: 0%;  
+             left: 0%;  
+             width: 100%;  
+             height: 100%;  
+             background-color: black;  
+             z-index:1001;  
+             -moz-opacity: 0.8;  
+             opacity:.80;  
+             filter: alpha(opacity=80);  
+        } 
+        .white_content {
+            display: none;  
+            position: absolute; 
+            border: 2px solid orange; 
+            background-color: white; 
+            z-index:1002;
+            overflow: auto;
+        }  
+        #cart{
+            display: none;  
+            position: absolute; 
+            height:10%;
+            width:100%;
+            border: 2px solid orange; 
+            background-color: white; 
+            z-index:1003;
+            overflow: auto;
+        }
+        #kk{
+            width:1000px; height:2000px; border:1px solid red;
+        }
+    </style>
+    <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+    <script language="javascript">
+        function openWindow(){
+            
+            
+           
+
+            /*$("#cart").animate({bottom:'22px'},232);    */
+        }
+
+         $(document).ready(function(){
+              $("#button").click(function(){
+               var scrollTop =  $(document).scrollTop();
+               alert(-scrollTop);
+                document.getElementById('fade').style.display='block';
+                document.getElementById('cart').style.display='block';
+                $("#cart").animate({
+                  bottom:-scrollTop,
+                  height:'+=500px'
+                },500);
+              });
+            });
+        function closeWindow(){
+            document.getElementById('light').style.display='none';
+            document.getElementById('fade').style.display='none';
+        }
+    </script>
+
+</head>
+<body>
+
+     <div id="fade" class="black_overlay"></div>
+      <div id="kk">
+        dsafsdaf
+    </div>
+    <p>可以根据自己要求修改css样式
+    <input type="button" id="button" value="点击这里打开窗口" /></p>
+     <iframe src="cart.html" width="100%"  height="100%" frameborder="0" scrolling="no" id="cart"> 
+   
+   
+    
+</html>

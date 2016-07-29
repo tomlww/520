@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <style>
+    /*header begin*/
+    .header-div{
+    	width: 100%;
+    	height: 4.5rem;
+    	background: white;
+    }
+     /*header end*/
+	.personal-div-bg{
+		width: 100%;
+    	height: 10rem;
+		background:url('image/ygx.jpg');
+		background-repeat:no-repeat;
+		margin-bottom: 1rem;
+	}
+	.p-user-div{
+		 position: absolute;
+	    top: 6rem;
+	    left: 50%;
+	    text-align: center;
+	}
+	.p-user-bg{
+	    width: 6rem;
+	    height: 6rem;
+	    border-radius: 50%;
+	    border: 1px solid #ccc;
+	    margin: 0 auto;
+		background:url('image/body.jpg');
+		background-repeat:no-repeat;
+		background-size: 11rem;
+	}
+	.p-title-ul {
+		margin:1rem auto;
+	}
+	.p-title-ul li{
+		width: 17rem;
+	    height: 2rem;
+	    border: 1px solid #ccc;
+	    text-align: center;
+	    line-height: 2rem;
+	    font-size: 16px;
+	}
+	.p-title-ul .li-span{
+		width: 1rem;
+	    height: 1rem;
+	    /* border: 1px solid red; */
+	    display: -webkit-inline-box;
+	}
+	.p-title-ul .li-span img{
+		width: .9rem;
+	}
+	/*order begin*/
+	.p-order{
+		margin-bottom:2rem;
+	}
+	.p-order-title-div{
+		width: 100%;
+   	 	height: 2rem;
+   	 	line-height: 2rem;
+    	background: #ccc;
+	}
+	.p-order-title-div div:nth-child(1){
+		float:left;
+	}
+	.p-order-title-div div:nth-child(2){
+		float:right;
+	}
+	.p-ul{
+		 border-bottom:1px solid #ccc;
+	}
+	.p-ul li{
+		width: 17rem;
+	    height: 3rem;
+	   
+	    line-height: 1.4rem;
+	 
+	}
+	.p-ul li .span{
+		    margin-left: 1rem;
+	}
+	.p-order-js-div{
+		width: 100%;
+	    height: 3rem;
+	   /*  border: 1px solid red; */
+	    line-height: 3rem;
+	    text-align: right;
+	}
+	 .p-but1{
+		width: 6rem;
+	    height: 1.5rem;
+	    border-radius: 5px;
+	    background: #FFA32C;
+	    color: white;
+	}
+	.p-order-js-div .p-but2{
+		width: 6rem;
+	    height: 1.5rem;
+	    border-radius: 5px;
+	    background: #454545;
+	    color: white;
+	}
+	/*order end*/
+	/*cart begin*/
+	.p-cart{
+		
+	}
+	.p-cart-ul{
+		background: #ccc;
+	}
+	.p-cart-ul li{
+		width: 11rem;
+	    height: 2rem;
+	    line-height: 2rem;
+	    /* border: 1px solid red; */
+	    text-align: center;
+	}
+	.p-cart-ul li span{
+		width: 2px;
+	    height: 1.6rem;
+	    background: #626262;
+	    display: -webkit-inline-box;
+	    float: right;
+	    line-height: -0.2rem;
+	    margin: 4px;
+	}
+	.p-cart-info-ul{
+		border-bottom: 1px solid #ccc;
+	}
+	.p-cart-info-ul li{
+		width: 10rem;
+    height: 3rem;
+   /*  border: 1px solid red; */
+	}
+	.p-cart-info-ul li .img{
+		    width: 1rem;
+	}
+	.p-cart-info-ul li .input{
+		 height: 1.1rem;
+    	width: 1rem;
+	}
+	.p-cart-info-ul li .textInput{
+		 width: 2rem;
+	    text-align: center;
+	    margin: 3px;
+	}
+	.p-cart-js{
+		width: 100%;
+	    height: 3rem;
+	    /* border: 1px solid red; */
+	    line-height: 3rem;
+	}
+	.p-cart-js div:nth-child(1){
+		float:left;
+	}
+	.p-cart-js div:nth-child(2){
+		float:right;
+	}
+	/*cart end*/
+	/*core gegin*/
+	.p-core .head-div{
+		margin-top:1rem;
+		text-align:center;
+	}
+	
+	.p-core .head-div img{
+		width:6rem;
+		height:6rem;
+		border-radius:50%;
+	}
+	.p-core table{
+		width: 22rem;
+	   /*  border: 1px solid red; */
+	    margin: 1rem auto;
+	}
+	.p-core table tr {
+		    width: 100%;
+    height: 2rem;
+	}
+	.p-core table tr td input{
+		width: 12rem;
+    border: 1px solid #ccc;
+    height: 1.3rem;
+    margin-left: .5rem;
+    border-radius: 5px;
+	}
+	.p-core table tr .textr{
+		text-align: right;
+	}
+	.p-core table tr .but{
+		margin-top:1rem;
+		color:white;
+		background:#FFA32C;
+		height:1.8rem;
+	}
+	.cmAction{
+		background: #454545;
+    	color: white;
+	}
+	/*core end*/
+    </style>
+</head>
+<body>
+	<div class="header-div">
+			<iframe src="header.html" width="100%" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" ></iframe>
+	</div>
+
+	<div class="personal-div-bg">
+		<div class="p-user-div">
+			<div class="p-user-bg"></div>
+			<div>账户:wdff123</div>
+		</div>
+	</div>
+	<ul class="body-div flex-center p-title-ul">
+		<li class="cmAction" attr="order">
+			<span class="li-span"><img src="image/order1.png" checkedImg = "order1.png" offImg="order2.png" alt=""></span>
+			<span>我的订单</span>
+		</li>
+		<li attr="cart">
+			<span class="li-span"><img src="image/order2.png" checkedImg = "order1.png" offImg="order2.png"  alt=""></span>
+			<span>购物车</span>
+		</li>
+		<li attr="user">
+			<span class="li-span"><img src="image/order2.png" checkedImg = "order1.png" offImg="order2.png"  alt=""></span>
+			<span>我的资料</span>
+		</li>
+	</ul>
+	<!-- 订单 -->
+	<div class="body-div p-order " id="order">
+		<div class="p-order-title-div">
+			<div>订单号:6008897232</div>
+			<div>2016-04-03 11:23:34&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		</div>
+		<ul class="flex-center p-ul">
+			<li class="flex-center">
+				<span >
+					<img src="image/zl.png" alt="">
+				</span>
+				<span class="span">
+					<p>社保公积金</p>
+					<p>地区:上海浦东新区</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span></span>
+				<span>
+					<p>支付金额：￥3000</p>
+					<p>购买数量：2</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span>股东会议事规则</span>
+				<span class="span">
+					<img src="image/bkxz.png" alt="">
+				</span>
+			</li>
+		</ul>
+		<div class="p-order-js-div" >
+			<span>合计：60000</span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" class="p-but1" name="" value="付款">
+			</span>&nbsp;&nbsp;
+			<span>
+				<input type="button" class="p-but2" name="" value="取消订单">
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
+
+	<!-- 购物车 -->
+	<div class="p-cart body-div" id="cart">
+		<div >
+			<ul class="flex-center p-cart-ul">
+				<li>项目 <span></span></li>
+				<li>单价 <span></span></li>
+				<li>数量 <span></span></li>
+				<li>合计 <span></span></li>
+				<li>操作 </li>
+			</ul>
+		</div>
+
+		<ul class="flex-center p-cart-info-ul">
+			<li class="flex-center">
+				<span>
+					<img src="image/hdh.png" alt="">
+				</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span >
+					<img src="image/zl.png" alt="">
+				</span>&nbsp;&nbsp;
+				<span class="span">
+					社保公积金
+				</span>
+				
+			</li>	
+			<li class="flex-center">
+				<span>
+					单价：￥3000
+				</span>
+			</li>	
+			<li class="flex-center">
+				<span>
+					<input type="button" class="input" value="-"><input type="text" class="textInput" value="1"><input type="button" class="input"  value="+">
+				</span>
+			</li>
+			<li class="flex-center">
+				<span>
+					￥3000元
+				</span>
+			</li>
+			<li class="flex-center">
+				<img src="image/ljt.png" class="img" alt="">
+			</li>
+		</ul>
+		<div class="p-cart-js">
+			<div class="flex-center">&nbsp;&nbsp;&nbsp;&nbsp;
+				<span><input type="checkbox"></span>
+				<span>全选</span>
+			</div>
+			<div >
+			<span>合计：60000</span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" class="p-but1" name="" value="付款">
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+		</div>
+		</div>
+	</div>
+	<!-- 个人中心 -->
+	<div class="p-core" id="user">
+		<div class="head-div">
+			<div>
+				<img src="image/body.jpg" alt="">
+			</div>
+			<div>
+				点击更换头像
+			</div>
+		</div>
+		<table>
+			<tr>
+				<td class="textr">手机号码:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="textr">姓    名:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="textr">性    别:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="textr">公司名称:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="textr">邮箱地址:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" class="but" name="" value="保 &nbsp;&nbsp; 存"></td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script  type="text/javascript" charset="utf-8" >
+		$(function(){
+			$("#cart").hide();
+			$("#user").hide();
+			$(".p-title-ul").find("li").each(function(){
+				$(this).click(function(){
+					$(".p-title-ul").find("li").each(function(){
+						$(this).removeClass("cmAction");
+						var offimg = $(this).find("img").attr("offImg");
+						$(this).find("span img").attr("src","image/"+offimg+"");
+						var type = $(this).attr("attr");
+						$("#"+type).hide();
+					});
+					$(this).addClass("cmAction");
+					var checkedImg = $(this).find("img").attr("checkedImg");
+					$(this).find("span img").attr("src","image/"+checkedImg+"");//设置大图标
+					var type = $(this).attr("attr");
+					$("#"+type).show();
+
+				})
+			})
+		});
+	</script>
+	<iframe src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
+</body>
+</html> 

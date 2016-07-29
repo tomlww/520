@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		*, *:after, *::before {
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		a{
+			text-decoration:none;
+		}
+		.flex-center {
+		  display: box;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  box-align: center;
+		  -webkit-box-pack: center;
+		  -webkit-justify-content: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+		  box-pack: center;
+		}
+		.container{
+			border:1px solid red;
+			
+			min-height:24rem;
+			    background: url('image/logbj.png');
+    		background-repeat: no-repeat;
+
+		}
+		.wrap{
+			
+			display:-moz-box;
+			display:-webkit-box;
+			display:box;
+			
+		}
+
+
+		.hg{
+			height:3rem;
+			line-height:3rem;
+		}
+		
+		.wth30{
+			width:22rem;
+		}
+		.ct{
+			text-align: center;
+		}
+		.bder{
+			border:1px solid red;
+		}
+		.flex1{
+			-moz-box-flex:1;
+			-webkit-box-flex:1;
+			box-flex:1;
+		}
+
+		
+		form div{
+			width:16rem;
+		}
+		#login-form div{
+			height:3rem;
+			line-height:3rem;
+			    margin: 0px auto;
+		}
+		 input[type *="text"] {
+		    height: 2rem;
+	 		padding-left: .3rem;
+	 		width: 13rem;
+			border: 1px solid blue;
+		}
+
+		.bg-user{
+			display: block;
+		    background: url('image/user.png');
+		    width: 3rem;
+		    height: 3rem;
+		    background-repeat: no-repeat;
+		   /*  border: 1px solid red; */
+		    /* text-align: center; */
+		    background-position: 1rem;
+		}
+		.bg-pws{
+			display: block;
+		    background: url('image/ps.png');
+		    width: 3rem;
+		    height: 3rem;
+		    background-repeat: no-repeat;
+		  /*   border: 1px solid red; */
+		    /* text-align: center; */
+		    background-position: 1rem;
+		}
+		.login_checkoff {
+			height: 1rem;
+    		
+		    background-image: url(image/check_off.png);
+		    background-repeat: no-repeat;
+		    font-size: 15px;
+		}
+		.login_checkon{
+			height: 1rem;
+    		
+			background-image: url(image/check_on.png);
+    		background-repeat: no-repeat;
+    		font-size: 15px;
+		}
+		.login-a{
+			width: 6rem;
+    		text-align: right;
+		}
+		.but-reg{
+			width: 93.5%;
+		    height: 2rem;
+		    border-radius: 5px;
+		    background: #43B2FF;
+		    color: white;
+		    border: none;
+		}
+		.error{
+			padding-left:3rem;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container wth30">
+		<div class="wrap  wth30 bder ct hg titles">
+			<div class="flex1">快速登录</div>
+			<div class="flex1">快速注册</div>
+		</div>
+		<form action="" method="post" accept-charset="utf-8" id="login-form" class="wth30">
+			<div class="flex-center">
+				<label class="bg-user"></label>
+				<input type="text" name="userName" id="userName" />
+			</div>
+			<div class="flex-center">
+				<label class="bg-pws"></label>
+				<input type="text" name="pws" >
+			</div>
+			<div class="error">请输入用户名</div>
+			<div class="flex-center">
+				<span  class="login_checkoff" id="loginCheckon">
+					<input id="logagree" class="agree" type="checkbox" checked="false" name="checked" style="width:12px;position:relative;top:3px;opacity:0;" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+                </span>
+                <span>记住我</span>		
+                <a href="${ctxPath}/html/forgetPws.html" class="login-a">忘记密码</a>
+			</div>
+			<div style="text-align: right;">
+				<input type="button" class="but-reg" name="submit" value="登&nbsp;&nbsp;录">
+			</div>	
+		</form>
+		<form action="登录注册_submit" method="post" accept-charset="utf-8" style="    display: none; ">
+			<div>
+				<lable></lable>
+				<input type="text" name="user" >
+			</div>
+			<div>
+				<lable></lable>
+				<input type="text">
+				<lable>获取验证码</lable>
+			</div>
+			<div>
+				<lable></lable>
+				<input type="text">
+			</div>
+			<div >
+				<span  class="login_checkon" id="regCheckon">
+	            	<input id="regagree" type="checkbox" class="agree" checked="true" name="checked" style="width:20px;position:relative;top:3px;opacity:0;" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+	        	</span>
+        		<span class="cursor" id="showProcole">我已阅读并同意《企榕平台用户服务协议》</span>
+			</div>
+			<div>
+				<input type="button" name="button" value="注 &nbsp;&nbsp;册">
+			</div>
+		</form>
+	</div>
+
+
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script language="javascript">
+        $(document).ready(function(){
+              $("#login").click(function(){
+              	$("#longinDiv").removeClass("hide");
+              	$(this).addClass("action");
+              
+              	$("#registerDiv").addClass("hide");
+              	$("#register").removeClass("action");
+              	$("#register").addClass("cb2");
+
+            });
+
+             $("#register").click(function(){
+              	$("#registerDiv").removeClass("hide");
+              	$(this).addClass("action");
+              	$("#longinDiv").addClass("hide");
+              	$("#login").removeClass("action");
+              	$("#login").addClass("cb2");
+            });
+
+            $("input[name=codeButton]").click(function(){
+            	$(this).css("background","#ccc");
+            	//$(this).val("60");
+            	var $this = $(this);
+            	
+				settime($this,60);
+            });
+
+            $("#loginBut").click(function(){
+            	var user = $.trim($("#user").val());
+            	if(user.length == 0 ){
+            		showErrors('user','请输入手机号码');
+            		return ;
+            	}
+            	if(!user.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					$('#user').parent().addClass('icon-error');
+					showErrors('user','请正确填写手机号码');
+					return ;
+           		}
+           		var password = $.trim($("#password").val());
+           		if(password == null || password == ""){
+           			showErrors('password','请输入密码');
+					return ;
+           		}
+
+         	});
+
+         	$("#butReg").click(function(){
+         		if(!testPhoneNum())
+         			return ;
+				var code = $.trim($("#code").val());
+				if(code == null || code == ""){
+					showErrors('code','请输入验证码');
+					return ;	
+				}
+				var regpws = $.trim($("#regpws").val());
+				if(regpws == null || regpws == ""){
+					showErrors('regpws','请输入密码');
+					return ;	
+				}
+         	});
+
+         	$("#loginCheckon,#regCheckon").click(function(){
+         		if($(this).attr("class") == "login_checkon"){
+         			$(this).removeClass($(this).attr("class"));
+         			$(this).addClass('login_checkoff');
+         			$(this).find("#agree").attr("checked",false);
+         		}else{
+         			$(this).removeClass($(this).attr("class"));
+         			$(this).addClass('login_checkon');
+         			$(this).find("#agree").attr("checked",true);
+         		}
+         		
+         	});
+       });
+		function testPhoneNum(){
+			var phoneNum = $.trim($("#phoneNum").val());
+         		if(phoneNum == null || phoneNum == ""){
+					showErrors('phoneNum','请输入手机号码');
+					return false;
+				}else if(!phoneNum.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					showErrors('phoneNum','请正确填写手机号码');
+					return false;
+				}
+				return true;
+		}
+       function settime(val,countdown) {
+       	var countdown = countdown;
+			if (countdown == 0) {
+				val.attr("disabled",false);
+				val.val("获取验证码");
+				val.css("background","black");
+				return;
+			} else {
+				val.attr("disabled",true);
+				
+				val.val("重新发送(" + countdown + ")");
+				countdown--;
+		}
+		setTimeout(function() {
+					settime(val,countdown);
+				},1000)
+		
+	}
+
+	//显示错误信息
+	function showErrors(id,str){
+		var $perror = $('#perror');
+		var $wrap = $('#'+id).parent().parent('.flex-center');
+		if(!$perror.length){
+			$error = $wrap.after('<li class="perror" id="perror">'+str+'</li>');
+			$error.show();
+			var top = $error.position()['top'];
+			var scrollTop = $(window).scrollTop(top);
+		}
+	}
+
+    </script>
+</body>
+</html>

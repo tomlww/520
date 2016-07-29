@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		
+		/* 弹出层 begin*/
+		.black_overlay{
+             display: none; 
+             -webkit-box-position:fixed;
+             -webkit-box-position: fixed;
+            -ms-flex-position: absolute;
+            -webkit-justify-position: fixed;
+             position: fixed;
+             top: 0%;  
+             left: 0%;  
+             width: 100%;  
+             height: 100%;  
+             background-color: black;  
+             z-index:1003;  
+             -moz-opacity: 0.6;  
+             opacity:.60;  
+             filter: alpha(opacity=60);  
+        }
+        #protocol {
+            display: none;  
+            position: absolute; 
+            height:80%;
+            width:30%;
+            left:30%;
+            top:10%;
+            background-color: white; 
+            z-index:1009;
+            overflow: auto;
+
+        }
+      
+	</style>
+</head>
+<body>
+	<div id="fade" class="black_overlay"></div>
+	<div id="protocol">
+		
+		
+		<div class="body-div div-image" id="div-image">
+			<img src="image/cw.png"  style="width: 1rem;cursor:pointer;" alt="协议">&nbsp;
+		</div>
+		<iframe src="注册协议.html" width="100%" height="100%"></iframe>
+	</div>
+
+	<input type="button" name="button" id="button" value="点击弹出层">
+
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			$("#button").click(function(){
+				$(".black_overlay").show();
+				$("#protocol").show();
+				 $("#protocol").css("overflow-y","hidden");
+			});
+			
+		})
+	</script>
+</body>
+</html>

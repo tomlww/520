@@ -1,0 +1,183 @@
+.body-div{
+    		background:white;
+
+    		
+    	}
+    	.wc{
+			color: white;
+		}
+		.fc {
+			color: #8C8C8C;
+			}
+
+		  html input[type="button"] {
+		    -webkit-appearance: button;
+		    cursor: pointer;
+		    border: 1px solid #ccc;
+		 		} 
+		.div-image{
+			
+			text-align: right;
+    		height: 1.5rem;
+    		line-height: 2rem;
+		}
+		.div-image:hover{
+			cursor:hand;
+			cursor:pointer;
+		}
+		.body-info{
+			width: 41rem;
+			margin: 0 auto;
+		}
+		.lz-title{
+			text-align: left;
+		    height: 2rem;
+		    
+		    line-height: 2rem;
+		    border-bottom: 2px solid #ccc;
+		    font-size: 1.1rem;
+		    font-family: inherit;
+		}
+		.address-div{
+			text-align: left;
+		    height: 3rem;
+		    line-height: 3rem;
+		    border-bottom: 1px solid #ccc;
+		}
+		
+		.input{
+			margin-left: 1rem;
+		    width: 5.5rem;
+		    height: 1.5rem;
+		    border-radius: 5px;
+		    background: white;
+		    /* color: white; */
+		    border: 1px solid #ccc;
+		    color: #8C8C8C;
+		}
+		.regionAction{
+			background: #42B6FF;
+    		color: white;
+    		border:none;
+		}
+		.addr-eare{
+			text-align: left;
+			height: 2rem;
+    		line-height: 2rem;
+    		/* border: 1px solid red; */
+		}
+		.eare-ul{
+			width: 32.7rem;
+		    
+		    overflow: hidden;
+		    margin: 0 auto;
+		}
+		.eare-ul li{
+			/* 
+					   
+					    margin-left: 1rem;
+					    width: 5.5rem;
+					   
+					    
+					   
+					    text-align: center;
+					    float: left; */
+		font-size: 12px;
+		width: 5.5rem;
+	     height: 1.3rem;
+	    margin-top: .2rem;
+	   line-height: 1.3rem;
+	     border: 1px solid #ccc;
+	    /* background: #626262; */
+	    /* color: white; */
+	    text-align: center;
+	     border-radius: 5px;
+	    float: left;
+	        margin: .3rem .7rem .3rem 0
+		  
+		}
+		.bg-img{
+			background-image: url('../image/tj.png');
+		    background-repeat: no-repeat;
+		    background-position: 78px;
+		}
+		.other-eare{
+			width: 7rem;
+		    height: 1.5rem;
+		    line-height: 1.5rem;
+		    text-align: right;
+		}
+		.need-div{
+			text-align: left;
+			height: 1.8rem;
+    		line-height: 1.9rem;
+    		border-bottom: 1px solid #ccc;
+		}
+		.zhang-ul{
+			width: 100%;
+    		height: 4rem;
+		}
+		.zhang-ul li{
+			width: 10rem;
+		}
+		
+		.js-div{
+			height: 4rem;
+		    border-bottom: 1px solid #ccc;
+		    border-top: 1px solid #ccc;
+		}
+		.totol-div{
+			width: 25rem;
+		}
+		.js-div input{
+			width: 7rem;
+		    height: 2rem;
+		    text-align: center;
+		    color: white;
+		    border-radius: 5px;
+		     border: none;
+		}
+		.bgBuy-color{
+			background: #FF950B;
+		}
+		.bgCart-color{
+			background:#525252;
+		}
+		.jia-li{
+			text-align: center;
+		    font-size: 1.4rem;
+		    height: 3rem;
+		    line-height: 3rem;
+		}
+		.bg-li-img{
+			width: 1rem;
+		    height: 1rem;
+		    border: 1px solid #ccc;
+		    
+		    border-radius: 3px;
+		    margin-right: .3rem;
+		}
+		.imgChecked{
+			background-image: url('../image/hdh.png');
+		    background-repeat: no-repeat;
+		    background-position: -2px;
+		}
+		.wm{
+			width: 5rem;
+   			margin: 2px;
+		}
+
+		.totole{
+			 font-size: .8rem;
+   			 margin-bottom: 4px;
+		}
+		.price{
+			color: #FF950B;
+    		font-size: 1rem;
+		}
+
+		.chengr-ul{
+			margin-top: .5rem;
+	    	width: 49rem;
+	    	float: right;
+			}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/font.css" />
+	<style type="text/css" media="screen">
+	/*搜索div begin*/
+	.search-div{
+		border: 1px solid #ccc;
+    	margin-bottom: 1rem;
+	}
+	.search-ul{
+		width: 50.4rem;
+		min-height:5rem;
+    	margin: 0 auto;;
+	}
+	.search-ul li{
+		float:left;
+		    width: 12rem;
+	    /* margin: 1rem; */
+	    height: 2rem;
+	   /*  border: 1px solid red; */
+	    line-height: 2rem;
+	    margin-left: 12px;
+	}
+	.search-ul li input{
+		width: 9rem;
+	    height: 1.1rem;
+	    margin-left: 4px;
+	}
+
+	/*搜索div end*/
+		/*order begin*/
+	.p-order{
+		margin-bottom:2rem;
+	}
+	.p-order-title-div{
+		width: 100%;
+   	 	height: 2rem;
+   	 	line-height: 2rem;
+    	background: #ccc;
+	}
+	.p-order-title-div div:nth-child(1){
+		float:left;
+	}
+	.p-order-title-div div:nth-child(2){
+		float:right;
+	}
+	.p-ul{
+		 border-bottom:1px solid #ccc;
+	}
+	.p-ul li{
+		width: 17rem;
+	    height: 3rem;
+	   
+	    line-height: 1.4rem;
+	 
+	}
+	.p-ul li .span{
+		    margin-left: 1rem;
+	}
+	.p-order-js-div{
+		width: 100%;
+	    height: 3rem;
+	   /*  border: 1px solid red; */
+	    line-height: 3rem;
+	    text-align: right;
+	}
+	 .p-but1{
+		width: 6rem;
+	    height: 1.5rem;
+	    border-radius: 5px;
+	    background: #FFA32C;
+	    color: white;
+	}
+	.p-order-js-div .p-but2{
+		width: 6rem;
+	    height: 1.5rem;
+	    border-radius: 5px;
+	    background: #454545;
+	    color: white;
+	}
+
+	/*order end*/
+	</style>
+</head>
+<body>
+	<div class="header-div">
+			<iframe src="header.html" width="100%" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" ></iframe>
+	</div>
+
+	<div class="body-div search-div">
+		<ul class="search-ul">
+			<li>订单号:<input type="text" name="orderNo" id="orderNo" /></li>
+			<li>下单日期:<input type="text" name="orderNo" id="orderNo" /></li>
+			<li>~<input type="text" name="orderNo" id="orderNo" /></li>
+			<li>订单状态:
+				<select name="" style="width: 8.5rem;height: 1.4rem;">
+					<option value="">请选择</option>
+					<option value="2">已跟踪</option>
+					<option value="1">已支付</option>
+					<option value="0">未支付</option>
+					<option value="9">已取消</option>
+				</select>
+			</li>
+			<li>业务员:<input type="text" name="" /></li>
+			
+		</ul>
+		<div class="p-order-js-div">
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" class="p-but1" name="" value="查询">
+			</span>&nbsp;&nbsp;
+			<span>
+				<input type="button" class="p-but2" name="" value="重置">
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
+	<!-- 订单 -->
+	<div class="body-div p-order " id="order">
+		<div class="p-order-title-div">
+			<div>订单号:6008897232</div>
+			<div>2016-04-03 11:23:34&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		</div>
+		<ul class="flex-center p-ul">
+			<li class="flex-center">
+				<span >
+					<img src="image/zl.png" alt="">
+				</span>
+				<span class="span">
+					<p>社保公积金</p>
+					<p>地区:上海浦东新区</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span></span>
+				<span>
+					<p>支付金额：￥3000</p>
+					<p>购买数量：2</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span></span>
+				<span class="span">
+					<p>客户名称:张三</p>
+					<p>联系方式：15800944023</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span></span>
+				<span class="span">
+					<p>业务经理:张三</p>
+					<p>联系方式：15800944023</p>
+				</span>
+			</li>
+			<li class="flex-center">
+				<span></span>
+				<span class="span">
+					<p>订单状态:已支付</p>
+				</span>
+			</li>
+		</ul>
+		<div class="p-order-js-div" >
+			<span>合计：60000</span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" class="p-but1" name="" value="确认订单">
+			</span>&nbsp;&nbsp;
+			<span>
+				<input type="button" class="p-but2" name="" value="退单">
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
+</body>
+</html>

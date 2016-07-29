@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <style>
+    	/*头部begin*/
+	    .head-div{
+	    	width:100%;
+	    	background:white;
+	    }
+			.line{
+			width: 3px;
+		    height: 3rem;
+		    background: black;
+		    margin: 1rem;
+		}
+		.wt-div{
+			width: 42rem;
+		}
+		/*头部end*/
+		/*中间begin*/
+		.bg-div{
+			width:100%;
+			height:29rem;
+			background:url('image/yd.jpg');
+			background-repeat:no-repeat;
+		}
+		.login-div{
+			position: absolute;
+		    width: 16rem;
+		    height: 19rem;
+		  /*   border: 1px solid red; */
+		    /* text-align: center; */
+		    /* margin: 0 auto; */
+		    /* padding: 2rem; */
+		    /* margin: 5rem; */
+		    top: 27%;
+		    left: 57%;
+		    background:url('image/logbj.png');
+		    background-repeat:no-repeat;
+
+		}
+		.login-title{
+			background:white;
+
+		}
+		.login-title div{
+			width: 50%;
+		    height: 2.6rem;
+		    font-size: 1rem;
+		    text-align: center;
+		    line-height: 2.6rem;
+		   
+		}
+		.logo , .login-title div:hover{
+			cursor:hand;
+			cursor:pointer;
+		}
+		.action{
+			border-bottom:2px solid #626262;
+			 color: #686868;
+		}
+		.login-info{
+			margin-top: 1rem;
+		}
+		.login-info ul{
+			    width: 80%;
+			text-align: center;
+			    margin: 0px auto;
+		}
+		.wx-img-reg{
+			display: inline-block;
+		   width: 8rem;
+    		
+		    text-align: center;
+		   /*  margin: 1rem; */
+		}
+		.wx-img-login{
+			display: inline-block;
+		   width: 6rem;
+    		height: 6rem;
+		    text-align: center;
+		}
+		.loing-reigth li{
+			/* margin: 1rem; */
+			height: 2rem;
+    		line-height: 2rem;
+		}
+		.span-img{
+			height: 1.3rem;
+		}
+		.span-wt{
+			width: 12rem;
+		}
+		.span-input{
+		    width: 11rem;
+		    height: 1.2rem;
+		    border-radius: 5px;
+		    border: 1px solid #ccc;
+		    margin-left: .5rem;
+		}
+		.code{
+			width: 4rem;
+		    height: 1.4rem;
+		    border-radius: 5px;
+		    color: white;
+		    background: black;
+		    text-align: center;
+		}
+		
+		.code-input{
+			width: 6.9rem;
+		    height: 1.2rem;
+		    border-radius: 5px;
+		    border: 1px solid #ccc;
+		    margin-left: .5rem;
+		}
+		.but-reg{
+			width: 100%;
+		    height: 1.5rem;
+		    border-radius: 5px;
+		    background: #43B2FF;
+		    color: white;
+		}
+		.wx-fz{
+			font-size: 1rem;
+   			/* margin-bottom: .5rem; */
+		}
+		.hide{
+			display:none;
+		}
+		
+		.jz-span{
+			width: 6.3rem;
+   
+    		display: -webkit-inline-box;
+		}
+		#perror {
+		    margin: 0px;
+		    padding-left: 3.4rem;
+		    margin-left: 3px;
+		    height: 1rem;
+		    line-height: 1rem;
+		    text-align: left;
+		}
+		#loginForm{
+			width:100%;
+		}
+		/*中间end*/
+		.login_checkoff {
+			height: 1rem;
+    		margin-top: 6px;
+		    background-image: url(image/check_off.png);
+		    background-repeat: no-repeat;
+		    font-size: 15px;
+		}
+		.login_checkon{
+			height: 1rem;
+    		margin-top: 6px;
+			background-image: url(image/check_on.png);
+    		background-repeat: no-repeat;
+    		font-size: 15px;
+		}
+		.login-a{
+			width: 6rem;
+    		text-align: right;
+		}
+    </style>
+</head>
+<body>
+	<div class="head-div">
+		<div class="body-div flex-center">
+			<div class="logo">
+				<a href="index.html"><img src="image/blankLogo.png" alt=""></a>	
+			</div>
+			<div class="line"></div>
+			<div class="wt-div">
+				<p>欢迎注册</p>
+				<p>Welcome registration</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bg-div">
+		<div class ="login-div">
+			<div class="flex-center login-title">
+				<div class="cb2" id="login">快速登录</div>
+				<div class="action" id="register">快速注册</div>
+			</div>
+			<div class=" login-infoflex-center " id="registerDiv">
+		
+				<!-- <ul>
+					<li class="wx-img-reg">
+						<img src="image/two.png" alt="	">
+					</li>
+					<li class="wx-fz">微信快速注册</li>
+					<li>扫描二维码>关注公众号>注册成功</li>
+				</ul> -->
+				<ul class="loing-reigth">
+					<li class="flex-center">
+						<span class="span-img">
+							<img src="image/user.png" alt="">
+						</span>
+						<span class="span-wt">
+							<input type="text" class="span-input" name="phoneNum" maxlength="11" id="phoneNum" placeholder="请输入手机号码">
+						</span>
+
+					</li>
+					 <li class="perror" id="perror">'+str+'</li>
+					<li class="flex-center">
+						<span class="span-img">
+							<img src="image/dxtb.png" alt="">
+						</span>
+						<span class="span-wt">
+							<input type="text" class="code-input" name="code" id="code" placeholder="请输入验证码">
+							<input type="button" class="code" name="codeButton"  value="获取验证码" >
+						</span>
+						
+					</li>
+
+					<li class="flex-center">
+						<span class="span-img">
+							<img src="image/ps.png" alt="">
+						</span>
+						<span class="span-wt">
+							<input type="password" class="span-input"  name="regpws" id="regpws" placeholder="请输入密码">
+						</span>
+
+					</li>
+					
+					<li class="flex-center ">
+						<span  class="login_checkon" id="regCheckon">
+                    <input id="agree" type="checkbox" checked="true" name="agree" style="width:20px;position:relative;top:3px;opacity:0;" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+                	</span>
+                	<span>我已阅读并同意《企榕平台用户服务协议》</span>
+					</li>
+					<li>
+						<input type="button" class="but-reg" name="button" id="butReg" value="立即注册">
+					</li>
+				</ul>
+			
+			</div>
+			
+
+			<div class="flex-center login-info hide" id="longinDiv" >
+				<!-- <ul>
+					<li class="wx-img-login">
+						<img src="image/two.png" alt="	">
+					</li>
+					<li class="wx-fz">微信快速登录</li>
+					<li>扫描二维码>关注公众号>登录成功</li>
+				</ul> -->
+				<form action="login_submit" method="post" accept-charset="utf-8" id="loginForm">
+					<ul class="loing-reigth">
+					<li class="flex-center ">
+						<span class="span-img">
+							<img src="image/user.png" alt="">
+						</span>
+						<span class="span-wt">
+							<input type="text" class="span-input" maxlength="11" name="user" id="user" required="required"  placeholder="请输入手机号码">
+						</span>
+					</li>
+					
+					<li class="flex-center ">
+						<span class="span-img">
+							<img src="image/ps.png" alt="">
+						</span>
+						<span class="span-wt">
+							<input type="password" class="span-input"  name="password" id="password" placeholder="请输入密码">
+						</span>
+		
+					</li>
+					
+					<li class="flex-center ">
+						<span  class="login_checkon" id="loginCheckon">
+                    <input id="agree" type="checkbox" checked="true" name="agree" style="width:20px;position:relative;top:3px;opacity:0;" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+                </span><span>记住我</span>		<a href="#" class="login-a">忘记密码</a>
+					</li>
+					<li></li>
+					<li>
+						<input type="button" class="but-reg" name="button" id="loginBut" value="登录">
+					</li>
+				</ul>
+				</form>
+				
+			</div>
+		</div>
+
+	</div>
+	
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script language="javascript">
+        $(document).ready(function(){
+              $("#login").click(function(){
+              	$("#longinDiv").removeClass("hide");
+              	$(this).addClass("action");
+              
+              	$("#registerDiv").addClass("hide");
+              	$("#register").removeClass("action");
+              	$("#register").addClass("cb2");
+
+            });
+
+             $("#register").click(function(){
+              	$("#registerDiv").removeClass("hide");
+              	$(this).addClass("action");
+              	$("#longinDiv").addClass("hide");
+              	$("#login").removeClass("action");
+              	$("#login").addClass("cb2");
+            });
+
+            $("input[name=codeButton]").click(function(){
+            	$(this).css("background","#ccc");
+            	//$(this).val("60");
+            	var $this = $(this);
+            	
+				settime($this,60);
+            });
+
+            $("#loginBut").click(function(){
+            	var user = $.trim($("#user").val());
+            	if(user.length == 0 ){
+            		showErrors('user','请输入手机号码');
+            		return ;
+            	}
+            	if(!user.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					$('#user').parent().addClass('icon-error');
+					showErrors('user','请正确填写手机号码');
+					return ;
+           		}
+           		var password = $.trim($("#password").val());
+           		if(password == null || password == ""){
+           			showErrors('password','请输入密码');
+					return ;
+           		}
+
+         	});
+
+         	$("#butReg").click(function(){
+         		if(!testPhoneNum())
+         			return ;
+				var code = $.trim($("#code").val());
+				if(code == null || code == ""){
+					showErrors('code','请输入验证码');
+					return ;	
+				}
+				var regpws = $.trim($("#regpws").val());
+				if(regpws == null || regpws == ""){
+					showErrors('regpws','请输入密码');
+					return ;	
+				}
+         	});
+
+         	$("#loginCheckon,#regCheckon").click(function(){
+         		if($(this).attr("class") == "login_checkon"){
+         			$(this).removeClass($(this).attr("class"));
+         			$(this).addClass('login_checkoff');
+         			$(this).find("#agree").attr("checked",false);
+         		}else{
+         			$(this).removeClass($(this).attr("class"));
+         			$(this).addClass('login_checkon');
+         			$(this).find("#agree").attr("checked",true);
+         		}
+         		
+         	});
+       });
+		function testPhoneNum(){
+			var phoneNum = $.trim($("#phoneNum").val());
+         		if(phoneNum == null || phoneNum == ""){
+					showErrors('phoneNum','请输入手机号码');
+					return false;
+				}else if(!phoneNum.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					showErrors('phoneNum','请正确填写手机号码');
+					return false;
+				}
+				return true;
+		}
+       function settime(val,countdown) {
+       	var countdown = countdown;
+			if (countdown == 0) {
+				val.attr("disabled",false);
+				val.val("获取验证码");
+				val.css("background","black");
+				return;
+			} else {
+				val.attr("disabled",true);
+				
+				val.val("重新发送(" + countdown + ")");
+				countdown--;
+		}
+		setTimeout(function() {
+					settime(val,countdown);
+				},1000)
+		
+	}
+
+	//显示错误信息
+	function showErrors(id,str){
+		var $perror = $('#perror');
+		var $wrap = $('#'+id).parent().parent('.flex-center');
+		if(!$perror.length){
+			$error = $wrap.after('<li class="perror" id="perror">'+str+'</li>');
+			$error.show();
+			var top = $error.position()['top'];
+			var scrollTop = $(window).scrollTop(top);
+		}
+	}
+
+    </script>
+	<iframe src="footer.html" width="100%" frameborder="0" scrolling="no">
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>index</title> 
+<script>  
+function doLogin(){  
+    document.loginform.submit();  
+}  
+</script> 
+</head> 
+<body > 
+<form name="loginform" action='http://192.168.1.200:8080/defense/subSystem/p_edit.action' method="post"  target="_blank" >  
+              <input type="hidden" name="id" size="25" value="2">     
+  <input type="button" value="提交表单" onclick="javascript:document.loginform.submit();"/> 
+        </form> 
+   <input type="button" value="提交表单2" onclick="javascript:document.loginform.submit();"/> 
+</body> 
+</html> 

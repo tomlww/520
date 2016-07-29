@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css" />
+	<style>
+	body{
+		
+		color: #4E4E4E;
+	}
+		.head-div{
+			width: 100%;
+		    height: 20%;
+		   /*  border: 1px solid red; */
+		    overflow: visible;
+		    height: auto !important;
+		    min-height: 6rem;
+		}
+		.line{
+			width: 3px;
+		    height: 3rem;
+		    background: black;
+		    margin: 1rem;
+		}
+		.wt-div{
+			width: 42rem;
+		}
+
+
+		.center-div{
+			width: 100%;
+   			 height: 18rem;
+   			 border:1px solid #B9B9B9;
+		}
+
+		.login-info{
+			margin-top: 1rem;
+		}
+		.login-info ul{
+			    width: 80%;
+			text-align: center;
+			    margin: 0px auto;
+		}
+		.loing-reigth li{
+			    width: 18rem;
+			 /*    border: 1px solid red; */
+			    height: 2rem;
+			    margin: 0px auto;
+		}
+		.loing-reigth li span:nth-child(1){
+			    width: 5rem;
+    			font-size: 16px;
+    		height: 1.3rem;
+    		    text-align: right;
+		}
+		.loing-reigth li span:nth-child(2) input{
+			    width: 11rem;
+   				 height: 1.3rem;
+			    border-radius: 5px;
+   			 border: 1px solid #ccc;
+   			     padding-left: 1em;
+		}
+
+		.but-reg{
+			width: 100%;
+		    height: 1.7rem;
+		    border-radius: 5px;
+		    background: #43B2FF;
+		    color: white;
+		    margin-left: 2.4rem;
+		    font-size: 15px;
+		}
+
+		.code{
+			width: 4rem;
+		    height: 1.4rem;
+		    border-radius: 5px;
+		    color: white;
+		    background: black;
+		    text-align: center;
+		}
+
+		 .clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+#perror {
+		       width: 7.7rem;
+		       height: 1rem;
+    line-height: 1rem;
+    text-align: left;
+		    
+		}
+	.wth7{
+		text-align:right;
+		width:3.4rem;
+	}
+	.w15{
+		width:15rem;
+	}
+	.wth10{
+		   width: 10rem;
+	}
+
+	.login-li{
+		    /* border: 1px solid red; */
+	    font-size: 14px;
+	   
+	    line-height: 4.5rem;
+	}
+	</style>
+</head>
+<body>
+	<div class="head-div">
+		<div class="body-div flex-center">
+			<div class="logo">
+				<a href="index.html"><img src="image/blankLogo.png" alt=""></a>	
+			</div>
+			<div class="line"></div>
+			<div class="wt-div">
+				<p style="font-size: 1rem;">忘记密码</p>
+			</div>
+			<ul class="flex-center flex-container w15">
+				<!-- <li class="flex-item wth10">
+					<a href="#" style="border-bottom: 2px solid #626262;">欢迎：15800944023 </a> 
+					<a  href="${ctxPath}/user/logOut">[退出]</a>
+				</li> -->
+				<li  class="flex-center wth10 login-li">
+					<a href="#"  onclick="a()">登录</a>&nbsp;&nbsp; <a href="#" onclick="a()">注册</a>
+				</li>
+				<!-- <li class="flex-item wth2" style=" width: 2rem;"><a href="#"  onclick="a()">登录</a></li>
+				<li class="flex-item wth2" style=" width: 2rem;"><a href="#" onclick="a()">注册</a></li> -->
+				<li class="flex-item wth7" >
+				<a>
+				购物车<img src="image/cart.png" alt="购物车" class="cart-img" style="    width: 1rem;">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<!-- <div>
+			<ul></ul>
+		</div> -->
+	</div>
+	<div class="center-div">
+
+		<div class="flex-center login-info " id="registerDiv">
+				
+				<ul class="loing-reigth">
+					<li class="flex-center">
+						<span class="span-img">
+							登录名&nbsp;&nbsp;
+						</span>
+						<span class="span-wt">
+							<input type="text" class="span-input" name="phoneNum" maxlength="11" id="user" placeholder="请输入手机号码">
+							
+							
+						</span>
+
+					</li>
+					<div class="clr"></div>
+					
+					<li class="flex-center">
+						<span class="span-img">
+							验证码&nbsp;&nbsp;
+						</span>
+						<span class="span-wt">
+							<input type="text" class="code-input" name="code" id=
+							"code" style="width: 6.8rem;" id="" placeholder="请输入验证码">
+							<input type="button" class="code"  name="codeButton" style="width: 4rem;height: 1.5rem;" value="获取验证码" >
+						</span>
+						
+					</li>
+
+					<li class="flex-center">
+						<span class="span-img">
+							输入新密码&nbsp;&nbsp;
+						</span>
+						<span class="span-wt">
+							<input type="password" class="span-input"  name="regpws" id="password" placeholder="请输入密码">
+						</span>
+
+					</li>
+					<li class="flex-center">
+						<span class="span-img">
+							确认新密码&nbsp;&nbsp;
+						</span>
+						<span class="span-wt">
+							<input type="password" class="span-input"  name="regpws" id="confirmPws" placeholder="请确认输入密码">
+						</span>
+
+					</li>
+					<li></li>
+					<li style="    width: 11.2rem;">
+						<input type="button" class="but-reg" name="button" id="submit" value="提   交">
+						
+					</li>
+				</ul>
+			
+			</div>
+	</div>
+	<div>
+		<iframe src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script language="javascript">
+        $(document).ready(function(){
+
+            $("input[name=codeButton]").click(function(){
+            	$(this).css("background","#ccc");
+            	//$(this).val("60");
+            	var $this = $(this);
+            	
+				settime($this,60);
+            });
+
+            $("#submit").click(function(){
+            	var user = $.trim($("#user").val());
+            	if(user.length == 0 ){
+            		showErrors('user','请输入手机号码');
+            		return ;
+            	}
+            	if(!user.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					$('#user').parent().addClass('icon-error');
+					showErrors('user','请正确填写手机号码');
+					return ;
+           		}
+
+           		var code = $.trim($("#code").val());
+           		if(code.length == 0){
+           			showErrors('code','请输入验证码');
+            		return ;
+           		}
+           		var password = $.trim($("#password").val());
+           		if(password == null || password == ""){
+           			showErrors('password','请输入新密码');
+					return ;
+           		}
+           		var confirmPws = $.trim($("#confirmPws").val());
+           		if(confirmPws == null || confirmPws == ""){
+           			showErrors('confirmPws','请输入确认密码');
+					return ;
+           		}
+           		if(password.length<6 || confirmPws.length<6){
+           			showErrors('password','密码长度不能小于6位');
+					return ;
+           		}
+           		if(password !=confirmPws ){
+           			showErrors('confirmPws','两次密码输入不相同');
+					return ;
+           		}	
+         	});
+
+         	$("#user").blur(function(){
+         		var user = $.trim($(this).val());
+            	if(user.length == 0 ){
+            		showErrors('user','请输入手机号码');
+            		return ;
+            	}
+            	if(!user.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					$('#user').parent().addClass('icon-error');
+					showErrors('user','请正确填写手机号码');
+					return ;
+           		}
+         	});
+         	$("#code").blur(function(){
+         		var  code = $.trim($(this).val());
+         		if(code.length == 0){
+           			showErrors('code','请输入验证码');
+            		return ;
+           		}
+         	});
+
+         	$("#confirmPws").blur(function(){
+         		var  confirmPws = $.trim($(this).val());
+         		if(confirmPws.length == 0){
+           			showErrors('confirmPws','请输入确认密码');
+            		return ;
+           		}
+           		if(confirmPws.length<6){
+           			showErrors('confirmPws','密码长度不能小于6位');
+					return ;
+           		}
+         	});
+         	$("#password").blur(function(){
+         		var  password = $.trim($(this).val());
+         		if(password.length == 0){
+           			showErrors('password','请输入新密码');
+            		return ;
+           		}
+           		if(password.length<6){
+           			showErrors('password','密码长度不能小于6位');
+					return ;
+           		}
+
+         	});
+         	
+       });
+		function testPhoneNum(){
+			var phoneNum = $.trim($("#phoneNum").val());
+         		if(phoneNum == null || phoneNum == ""){
+					showErrors('phoneNum','请输入手机号码');
+					return false;
+				}else if(!phoneNum.match(/^1(3[0-9]|7[0-9]|5[0-35-9]|8[01235-9])\d{8}$/)){
+					showErrors('phoneNum','请正确填写手机号码');
+					return false;
+				}
+				return true;
+		}
+       function settime(val,countdown) {
+       	var countdown = countdown;
+			if (countdown == 0) {
+				val.attr("disabled",false);
+				val.val("获取验证码");
+				val.css("background","black");
+				return;
+			} else {
+				val.attr("disabled",true);
+				val.val("重新发送(" + countdown + ")");
+				countdown--;
+		}
+		setTimeout(function() {
+					settime(val,countdown);
+				},1000)
+		
+	}
+
+	//显示错误信息
+	function showErrors(id,str){
+		var $perror = $('#perror');
+		var $wrap = $('#'+id).parent().parent('.flex-center');
+		if(!$perror.length){
+			$error = $wrap.after('<li class="perror" id="perror">'+str+'</li>');
+			$error.show();
+			var top = $error.position()['top'];
+			var scrollTop = $(window).scrollTop(top);
+		}
+	}
+
+    </script>
+</body>
+</html>
