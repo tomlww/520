@@ -189,6 +189,53 @@
 		 }
 		/**goods end*/
 		
+		/**搜索框begin*/
+		.searchbar .search-input input {
+		    margin: 0;
+		    height: 1.4rem;
+		}
+		.search-input label + input {
+		    padding-left: 1.4rem;
+		}
+		.search-input input {
+		    box-sizing: border-box;
+		    width: 50%;
+		    height: 1.4rem;
+		   /*  display: block; */
+		    border: none;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		    border-radius: 0.25rem;
+		    font-family: inherit;
+		    color: #3d4145;
+		    font-size: 0.7rem;
+		    font-weight: normal;
+		    padding: 0 0.5rem;
+		    background-color: #fff;
+		    border: 1px solid #b4b4b4;
+		}
+
+		input[type="search"] {
+		    -webkit-appearance: textfield;
+		    box-sizing: content-box;
+		}
+		.thw-mg{
+			width: 48%;
+    		margin: 1%;
+		}
+		.show-but{
+			border: 1px solid #ccc;
+		    padding: .2rem .4rem .2rem .4rem;
+		    background: white;
+		    border-radius: 2px;
+		    color: #999999;
+		    font-size: .8rem;
+		}
+		
+		/**搜索框end*/
+
+
 	</style>
 </head>
 <body>
@@ -201,28 +248,28 @@
 	      下一步
 	      <span class="icon icon-right"></span>
 	    </button>
-    	<h1 class="title">搜索框</h1>
+	    <div class="title search-input">
+	      <label class="icon icon-search" for="search"></label>
+	      <input type="search" id='search' placeholder='输入关键字...'/>
+	    </div>
+    	<!-- <h1 class="title">搜索框</h1> -->
   </header>
   <nav class="bar bar-tab ">
     <a class="tab-item external active" href="#">
       <span class="icon icon-home"></span>
-      <span class="tab-label">文案</span>
+      <span class="tab-label">首页</span>
     </a>
     <a class="tab-item external" href="#">
       <span class="icon icon-me"></span>
-      <span class="tab-label">文案</span>
+      <span class="tab-label">秀一秀</span>
     </a>
     <a class="tab-item external" href="#">
       <span class="icon icon-star"></span>
-      <span class="tab-label">文案</span>
+      <span class="tab-label">购物车</span>
     </a>
     <a class="tab-item external" href="#">
       <span class="icon icon-cart"></span>
-      <span class="tab-label">文案</span>
-    </a>
-    <a class="tab-item external" href="#">
-      <span class="icon icon-settings"></span>
-      <span class="tab-label">文案</span>
+      <span class="tab-label">我的</span>
     </a>
   </nav>
   <div class="content">
@@ -248,25 +295,54 @@
 	        <a class="quick-entry-link fz12 J_ping" report-eventid="MHome_Icons" report-eventparam="我的关注" page_name="index" href="http://home.m.jd.com/myJd/myFocus/focusWare.action"><img width="45" height="45" src="images/nav8.png"><span>我的关注</span></a>
 	</nav>
 	<div class="wth100 flex">最新秀一秀</div>
-	<div class="wrap span-between bred h10rem">
+	<!-- <div class="wrap span-between bred h10rem">
 		<div class="item-stretch">1</div>
 		<div class="flex-drt-cl">
 			<div class="h3rem ">2</div>
 			<div class="h3rem ">3</div>
 		</div>
-		
-	</div>
+	</div> -->
 	<div></div>
-	<div class="page-wrap flex-wrap">
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
+	<div class="page-wrap flex-wrap flex">
+
+
+		<div class="thw-mg">
+			<a href="#">
+				<div>
+					<img src="image/DSC_0342.JPG" alt="商品图片">
+				</div>
+				<div>
+					你以为我真的无所谓吗？留下的伤自有自己知道
+				</div>
+			</a>
+			<div class="flex box-pack-justify">
+				<label>$ 33</label>
+				<a href="#" class="show-but">看相似</a>
+			</div>
+			
+		</div>
+		<div class="thw-mg">
+			<a href="#">
+				<div>
+					<img src="image/DSC_0342.JPG" alt="商品图片">
+				</div>
+				<div>
+					你以为我真的无所谓吗？留下的伤自有自己知道
+				</div>
+			</a>
+			<div class="flex box-pack-justify">
+				<label>$ 33</label>
+				<a href="#" class="show-but">看相似</a>
+			</div>
+			
+		</div>
+		<!-- <div>3</div>
 		<div>4</div>
-		<div>5</div>
+		<div>5</div> -->
 	</div>
 
 
   </div>
-
+	
 </body>
 </html>
