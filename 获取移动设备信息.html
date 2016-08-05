@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	
+</head>
+<body>
+	<h1>获取设备信息</h1>
+	<script type="text/javascript">
+		var userAgent = navigator.userAgent;  
+		 alert(userAgent)  
+		 var index = userAgent.indexOf("Android")  
+		 if(index >= 0){  
+		   var androidVersion = parseFloat(userAgent.slice(index+8));   
+		   if(androidVersion<3){  
+		    // 版本小于3的事情  
+		    alert('版本小于3');  
+		   }  
+		 }  
+	
+		var browser = {
+			versions:function(){ 
+			var u = navigator.userAgent, app = navigator.appVersion; 
+			return ;
+			}(),
+			language:(navigator.browserLanguage || navigator.language).toLowerCase()
+		} 
+		document.writeln("语言版本: "+browser.language);
+		/*document.writeln(" 是否为移动终端: "+browser.versions.mobile);*/
+		document.writeln(" ios终端: "+browser.versions.ios);
+		document.writeln(" android终端: "+browser.versions.android);
+		document.writeln(" 是否为iPhone: "+browser.versions.iPhone);
+		document.writeln(" 是否iPad: "+browser.versions.iPad);
+		document.writeln(navigator.userAgent);
+	</script>
+</body>
+</html>
